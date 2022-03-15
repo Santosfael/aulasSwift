@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeController" customModule="Aula05" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift" translatesAutoresizingMaskIntoConstraints="NO" id="pFs-Ia-BzX">
+                                <rect key="frame" x="142" y="124" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="7NC-o8-Tfj"/>
+                                    <constraint firstAttribute="width" constant="130" id="bZZ-sy-hzc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informe seu E-mail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qou-Ti-6jA">
+                                <rect key="frame" x="16" y="294" width="382" height="24"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="17"/>
+                                <color key="textColor" red="0.95502930880000003" green="0.24510070680000001" blue="0.16784250740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KmQ-B4-7pV">
+                                <rect key="frame" x="16" y="323" width="382" height="45"/>
+                                <color key="backgroundColor" red="0.96714025739999998" green="0.60885375740000003" blue="0.23714995380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="9fj-x2-y1X"/>
+                                </constraints>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informe sua senha" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ttj-Yy-hbe">
+                                <rect key="frame" x="16" y="388" width="382" height="24"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="17"/>
+                                <color key="textColor" red="0.95502930880000003" green="0.24510070680000001" blue="0.16784250740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dgN-E0-Cdr">
+                                <rect key="frame" x="16" y="417" width="382" height="45"/>
+                                <color key="backgroundColor" red="0.96714025739999998" green="0.60885375740000003" blue="0.23714995380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="SNe-y1-dDD"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="dCa-pZ-qik"/>
+                                </constraints>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJt-1A-1Q7">
+                                <rect key="frame" x="16" y="482" width="382" height="45"/>
+                                <color key="backgroundColor" red="0.96714025739999998" green="0.60885375740000003" blue="0.23714995380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="XZY-is-WcV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Autenticar">
+                                    <color key="baseForegroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="authenticate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5CM-ZB-miv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KmQ-B4-7pV" firstAttribute="top" secondItem="qou-Ti-6jA" secondAttribute="bottom" constant="5" id="4XM-9Y-AIp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KmQ-B4-7pV" secondAttribute="trailing" constant="16" id="6zz-Qd-ZMu"/>
+                            <constraint firstItem="Ttj-Yy-hbe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7Eo-Ml-Gab"/>
+                            <constraint firstItem="KmQ-B4-7pV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ACW-2Z-65u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qou-Ti-6jA" secondAttribute="trailing" constant="16" id="B91-bc-1fa"/>
+                            <constraint firstItem="pFs-Ia-BzX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="BX9-rz-h4p"/>
+                            <constraint firstItem="dgN-E0-Cdr" firstAttribute="top" secondItem="Ttj-Yy-hbe" secondAttribute="bottom" constant="5" id="FbP-eV-Z7t"/>
+                            <constraint firstItem="dgN-E0-Cdr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Fnq-EI-vYT"/>
+                            <constraint firstItem="pFs-Ia-BzX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gkp-sd-kHG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qJt-1A-1Q7" secondAttribute="trailing" constant="16" id="Hc4-kk-lg5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dgN-E0-Cdr" secondAttribute="trailing" constant="16" id="PCr-JQ-Hai"/>
+                            <constraint firstItem="Ttj-Yy-hbe" firstAttribute="top" secondItem="KmQ-B4-7pV" secondAttribute="bottom" constant="20" id="QlS-lr-nQ1"/>
+                            <constraint firstItem="qou-Ti-6jA" firstAttribute="top" secondItem="pFs-Ia-BzX" secondAttribute="bottom" constant="40" id="Rs6-Av-69a"/>
+                            <constraint firstItem="qou-Ti-6jA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XLd-pH-IMM"/>
+                            <constraint firstItem="dgN-E0-Cdr" firstAttribute="top" secondItem="Ttj-Yy-hbe" secondAttribute="bottom" constant="5" id="mHc-wh-Onf"/>
+                            <constraint firstItem="qJt-1A-1Q7" firstAttribute="top" secondItem="dgN-E0-Cdr" secondAttribute="bottom" constant="20" id="mdz-2w-hg5"/>
+                            <constraint firstItem="qJt-1A-1Q7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pwk-Oa-Mvm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ttj-Yy-hbe" secondAttribute="trailing" constant="16" id="tUy-nx-pSk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authenticatorButton" destination="qJt-1A-1Q7" id="Nym-lg-7Da"/>
+                        <outlet property="emailTextField" destination="KmQ-B4-7pV" id="KUx-ge-bee"/>
+                        <outlet property="passwordTextField" destination="dgN-E0-Cdr" id="j7S-yJ-twI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="92.410714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="swift" width="1200" height="1200"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
