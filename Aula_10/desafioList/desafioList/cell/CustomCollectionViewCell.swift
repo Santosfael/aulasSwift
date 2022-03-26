@@ -20,15 +20,14 @@ class CustomCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func setup(image: String, nameCeo: String, nameCompany: String) {
+    func setup(ceoCompany: CeoCompany) {
         
-        ceoImage.loadImage(from: image)
+        ceoImage.loadImage(from: ceoCompany.photo)
         ceoImage.layer.cornerRadius = 30
         ceoImage.clipsToBounds = true
         
-        nameLabel.text = nameCeo
-        print("Company \(nameCompany)")
-        nameCompanyLabel.text = nameCompany
+        nameLabel.text = ceoCompany.name
+        nameCompanyLabel.text = ceoCompany.company.name
     }
 
 }
