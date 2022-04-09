@@ -68,6 +68,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let thirdViewController = ThirdViewController()
+        
         if let _ = navigationController {
             navigationController?.pushViewController(thirdViewController, animated: true)
         } else {
@@ -82,7 +83,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.indentifier, for: indexPath) as? CustomTableViewCell else { return UITableViewCell() }
-        //cell.textLabel?.text = "Rafael"
         return cell
     }
     
