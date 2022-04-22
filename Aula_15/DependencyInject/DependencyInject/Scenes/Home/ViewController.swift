@@ -7,20 +7,28 @@
 
 import UIKit
 
+/*
+ Injeção de independencia é uma tecnica que um objeto recebe outro objeto na qual ele depende
+ */
 class ViewController: UIViewController {
-    //ingeção de dependencia via propriedade
+    /// injeção de dependencia via propriedade
+    /// Quando se injeta por propriedade não precisa de instanciar um init/ construtor para inicializar a minha injeção
     let api = ServiceAPI()
     
-    //inicializador
+    /// inicializador
 //    private let apiUser: ServiceAPI?
 //
 //    init(apiUser: ServiceAPI) {
+//        Aqui está passando via construtor
 //        self.apiUser = apiUser
 //        super.init(nibName: nil, bundle: nil)
 //    }
-    //Construtor
-    private let apiServiceProtocol: ServiceApiProtocol?
     
+    /// Inversão de dependencia / inversão de controle
+    /// aqui tá herdando/assinando
+    /// Abaixo desse cara tá o inicializador
+    private let apiServiceProtocol: ServiceApiProtocol?
+    /// Instanciando o init/ construtor para injetar a dependencia
     init(apiServiceProtocol: ServiceApiProtocol) {
         self.apiServiceProtocol = apiServiceProtocol
         super.init(nibName: nil, bundle: nil)

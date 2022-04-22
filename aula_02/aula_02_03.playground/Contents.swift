@@ -43,6 +43,11 @@ struct Person {
     var age: Int?
 }
 
+//Closure
+//Pode ser visto como um bloco de código que pode ser passado como parâmetro para variável como o bloco de código,
+//Temos uma função que espera um completion para ela ser executada, para se dá como finalizada.
+//executada, para se dá como finalizada, é uma função dentro de uma função que é do tipo void
+//Precisa pegar o modelo da api que retornou e passar para viewcontroller, para quando aquele cara terminar de executar manda o que a viewcontroller necessita que o meu serviço mandou
 func makeBuy(value: Int, onCompletion: (Person) -> Void) {
     let person = Person(name: "Rafael", age: 29)
     onCompletion(person)

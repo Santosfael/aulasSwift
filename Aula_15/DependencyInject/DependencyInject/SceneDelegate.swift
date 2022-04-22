@@ -11,6 +11,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
     
+    /// injeção de dependencia via propriedade
+    /// Declarando ele aqui aparece no scopo da minha aplicação, aqui ele pode ser utilizado em n contextos
     let service = ServiceAPI()
     //var viewController = ViewController(apiUser: service)
 

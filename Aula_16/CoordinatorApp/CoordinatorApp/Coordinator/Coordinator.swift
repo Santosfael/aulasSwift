@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+/// Protocol é a mesma coisa de interface
 protocol Coordinator: AnyObject {
     
     var childCoordinators: [Coordinator] { get }

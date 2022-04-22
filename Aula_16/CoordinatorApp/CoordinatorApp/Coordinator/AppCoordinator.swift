@@ -12,6 +12,7 @@ class AppCoordinator: Coordinator {
     
     private(set) var childCoordinators: [Coordinator] = []
     
+    /// instanciando / Injetando a UIWindow via inicializador
     private let window: UIWindow
     
     init(window: UIWindow) {
